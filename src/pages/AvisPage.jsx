@@ -45,7 +45,7 @@ export default function AvisPage() {
       <section className="section container">
         <div style={{display: 'flex', flexDirection: 'column', gap: '4rem'}}>
           
-          <div className="comment-form" style={{maxWidth: '800px', margin: '0 auto', width: '100%', backgroundColor: 'white', padding: '2.5rem', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)'}}>
+          <div className="comment-form" style={{maxWidth: '800px', margin: '0 auto', width: '100%', padding: '2.5rem', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)'}}>
             <h3 style={{marginBottom: "2rem", fontSize: "1.5rem", textAlign: "center", color: 'var(--primary)'}}>Rédiger un témoignage détaillé</h3>
             <form onSubmit={handleSubmit} style={{display: 'flex', flexDirection: 'column', gap: '1.5rem'}}>
               
@@ -56,7 +56,7 @@ export default function AvisPage() {
                 </div>
                 <div style={{flex: 1, minWidth: '120px'}}>
                   <label style={{display: 'block', marginBottom: '0.5rem', fontWeight: 'bold', color: 'var(--text-secondary)'}}>Note Globale</label>
-                  <select className="form-input" value={newReview.rating} onChange={e => setNewReview({...newReview, rating: Number(e.target.value)})} style={{marginBottom: 0, cursor: 'pointer', backgroundColor: 'white'}}>
+                  <select className="form-input" value={newReview.rating} onChange={e => setNewReview({...newReview, rating: Number(e.target.value)})} style={{marginBottom: 0, cursor: 'pointer', backgroundColor: 'rgba(255, 255, 255, 0.8)'}}>
                     <option value={5}>⭐⭐⭐⭐⭐</option>
                     <option value={4}>⭐⭐⭐⭐</option>
                     <option value={3}>⭐⭐⭐</option>
@@ -93,7 +93,7 @@ export default function AvisPage() {
           <div style={{display: 'flex', flexDirection: 'column', gap: '2rem', maxWidth: '800px', margin: '0 auto', width: '100%'}}>
             <h2 className="section-title" style={{marginBottom: '1rem'}}>Avis Détériorés</h2>
             {reviews.map((r, i) => (
-              <div key={i} className="comment-card" style={{flexDirection: 'column', gap: '0', padding: '2rem', borderLeft: '4px solid var(--primary)', borderRadius: '15px'}}>
+              <div key={i} className="comment-card" style={{flexDirection: 'column', gap: '0', padding: '2rem', borderLeft: '4px solid var(--primary)', borderRadius: '15px' }}>
                 <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', borderBottom: '1px solid #eee', paddingBottom: '1rem'}}>
                   <strong style={{fontSize: '1.3rem', color: 'var(--primary)', fontFamily: 'var(--font-heading)'}}>{r.name}</strong>
                   <div className="stars" style={{margin: 0, letterSpacing: '2px'}}>{"★".repeat(r.rating)}{"☆".repeat(5-r.rating)}</div>
@@ -107,19 +107,19 @@ export default function AvisPage() {
                     </div>
                   )}
                   {r.food && (
-                    <div style={{backgroundColor: 'var(--bg-color)', padding: '1.5rem', borderRadius: '10px'}}>
+                    <div style={{backgroundColor: 'rgba(212, 163, 89, 0.1)', padding: '1.5rem', borderRadius: '10px'}}>
                       <h4 style={{color: 'var(--text-secondary)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem'}}>Boissons & Nourriture</h4>
                       <p style={{fontSize: '0.95rem'}}>{r.food}</p>
                     </div>
                   )}
                   {r.atmosphere && (
-                    <div style={{backgroundColor: 'var(--bg-color)', padding: '1.5rem', borderRadius: '10px'}}>
+                    <div style={{backgroundColor: 'rgba(212, 163, 89, 0.1)', padding: '1.5rem', borderRadius: '10px'}}>
                       <h4 style={{color: 'var(--text-secondary)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem'}}>Ambiance</h4>
                       <p style={{fontSize: '0.95rem'}}>{r.atmosphere}</p>
                     </div>
                   )}
                   {r.service && (
-                    <div style={{backgroundColor: 'var(--bg-color)', padding: '1.5rem', borderRadius: '10px'}}>
+                    <div style={{backgroundColor: 'rgba(212, 163, 89, 0.1)', padding: '1.5rem', borderRadius: '10px'}}>
                       <h4 style={{color: 'var(--text-secondary)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem'}}>Service</h4>
                       <p style={{fontSize: '0.95rem'}}>{r.service}</p>
                     </div>

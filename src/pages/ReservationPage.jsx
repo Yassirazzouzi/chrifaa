@@ -44,7 +44,7 @@ export default function ReservationPage() {
         <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem'}}>
           
           {/* Formulaire de réservation */}
-          <div className="comment-form" style={{backgroundColor: 'white', padding: '2.5rem', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', alignSelf: 'start'}}>
+          <div className="comment-form" style={{ padding: '2.5rem', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', alignSelf: 'start' }}>
             <h3 style={{marginBottom: "2rem", fontSize: "1.5rem", color: 'var(--primary)'}}>Faire une réservation</h3>
             <form onSubmit={handleReserve} style={{display: 'flex', flexDirection: 'column', gap: '1.5rem'}}>
               
@@ -80,7 +80,7 @@ export default function ReservationPage() {
           </div>
 
           {/* Calendrier Visuel */}
-          <div style={{backgroundColor: 'white', padding: '2.5rem', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)'}}>
+          <div className="comment-form" style={{ padding: '2.5rem', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
             <h3 style={{marginBottom: "2rem", fontSize: "1.5rem", color: 'var(--primary)'}}>Calendrier des réservations</h3>
             
             <div style={{display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '0.5rem', textAlign: 'center', marginBottom: '1rem', fontWeight: 'bold', color: 'var(--text-secondary)'}}>
@@ -102,8 +102,8 @@ export default function ReservationPage() {
                     padding: '0.5rem', 
                     border: hasRes ? '2px solid var(--primary)' : '1px solid #f0f0f0', 
                     borderRadius: '8px', 
-                    backgroundColor: hasRes ? '#fffdfa' : 'white', 
-                    display: 'flex', 
+                    backgroundColor: hasRes ? 'rgba(212, 163, 89, 0.2)' : 'rgba(255, 255, 255, 0.4)', 
+                    backdropFilter: 'blur(4px)',                    display: 'flex', 
                     flexDirection: 'column',
                     transition: 'all 0.2s',
                     cursor: 'pointer'
