@@ -41,10 +41,10 @@ export default function ReservationPage() {
       </div>
       
       <section className="section container">
-        <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem'}}>
+        <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem'}}>
           
           {/* Formulaire de réservation */}
-          <div className="comment-form" style={{ padding: '2.5rem', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', alignSelf: 'start' }}>
+          <div className="comment-form" style={{ padding: '1.5rem', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', alignSelf: 'start' }}>
             <h3 style={{marginBottom: "2rem", fontSize: "1.5rem", color: 'var(--primary)'}}>Faire une réservation</h3>
             <form onSubmit={handleReserve} style={{display: 'flex', flexDirection: 'column', gap: '1.5rem'}}>
               
@@ -80,7 +80,7 @@ export default function ReservationPage() {
           </div>
 
           {/* Calendrier Visuel */}
-          <div className="comment-form" style={{ padding: '2.5rem', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
+          <div className="comment-form" style={{ padding: '1.5rem', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
             <h3 style={{marginBottom: "2rem", fontSize: "1.5rem", color: 'var(--primary)'}}>Calendrier des réservations</h3>
             
             <div style={{display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '0.5rem', textAlign: 'center', marginBottom: '1rem', fontWeight: 'bold', color: 'var(--text-secondary)'}}>

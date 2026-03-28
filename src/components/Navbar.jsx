@@ -18,7 +18,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+    <header className={`header ${isScrolled ? 'scrolled' : ''} ${isOpen ? 'menu-open' : ''}`}>
       <nav className="navbar container">
         <Link to="/" className="nav-logo">Café Cherifa</Link>
         <div className={`nav-links ${isOpen ? 'open' : ''}`}>

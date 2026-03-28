@@ -30,7 +30,7 @@ export default function Home() {
         <p style={{ textAlign: "center", marginBottom: "3rem", color: "var(--text-secondary)" }}>Découvrez un aperçu de nos boissons et collations.</p>
         <div className="menu-grid">
           <div className="menu-card" style={{ backgroundImage: "url('/about.png')", backgroundSize: "cover", backgroundPosition: "center", position: "relative", zIndex: 1 }}>
-            <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", backgroundColor: "rgba(255,255,255,0.6)", backdropFilter: "blur(10px)", zIndex: -1, borderRadius: "20px" }}></div>
+            <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", backgroundColor: "rgba(255,255,255,0.6)", backdropFilter: "blur(var(--blur-val))", zIndex: -1, borderRadius: "20px" }}></div>
             <div className="stars">★★★★★</div>
             <div className="menu-list-container">
               <div className="menu-category">
@@ -55,8 +55,7 @@ export default function Home() {
             </div>
           </div>
           <div className="menu-card-image">
-            <img src="/menu.png" alt="Aperçu Menu"  width={"50%"
-            }/>
+            <img src="/menu.png" alt="Aperçu Menu" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
           </div>
         </div>
       </section>
@@ -122,7 +121,7 @@ export default function Home() {
       {/* Contact Section */}
       <section className="section container">
         <h2 className="section-title">Contact</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "4rem", alignItems: "start" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "2rem", alignItems: "start" }}>
           <div>
             <h3 style={{ fontSize: "1.8rem", marginBottom: "1.5rem" }}>Informations</h3>
             <p style={{ color: "var(--text-secondary)", marginBottom: "2rem" }}>

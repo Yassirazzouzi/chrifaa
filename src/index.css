@@ -8,6 +8,7 @@
   --text-secondary: #5c5853;
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
+  --blur-val: 12px;
 }
 
 * {
@@ -62,18 +63,37 @@ img {
   padding: 0 2rem;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
 .section {
   padding: 4rem 2rem;
   background-color: rgba(255, 255, 255, 0.45);
   /* Plus transparent pour l'effet de verre */
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(var(--blur-val));
   /* Effet blur (flou) puissant */
-  -webkit-backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.5);
   /* Légère bordure blanche */
   border-radius: 20px;
   margin: 2rem auto;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 1.5rem;
+    margin: 1rem auto;
+    border-radius: 0; /* Full width feel on mobile */
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .section-title {
@@ -172,6 +192,22 @@ img {
   margin-bottom: 1.5rem;
   line-height: 1.2;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh; /* Full screen on mobile */
+    border-radius: 0;
+  }
+  
+  .hero-content {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
 }
 
 /* About Section */
@@ -599,6 +635,12 @@ img {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .card-link {
+    padding: 2rem 1.5rem;
+  }
+}
+
 .card-link:hover {
   transform: translateY(-5px);
 }
@@ -631,24 +673,62 @@ img {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .header.menu-open {
+    background-color: white !important;
+    color: var(--text-primary) !important;
+  }
+
+  .header.menu-open .nav-logo {
+    color: var(--primary) !important;
+  }
+
   .nav-links {
     display: none;
-    position: absolute;
-    top: 60px;
+    position: fixed;
+    top: 60px; /* Reduced to show logo/button clearly */
     left: 0;
     width: 100%;
+    height: calc(100vh - 60px);
     background: white;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    z-index: 1001;
   }
 
   .nav-links.open {
     display: flex;
   }
 
+  .nav-links a {
+    color: var(--text-primary) !important;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .mobile-menu-btn {
     display: block;
+    position: relative;
+    z-index: 1002;
+    color: inherit;
+  }
+  
+  .header.scrolled .mobile-menu-btn {
+    color: var(--text-primary);
+  }
+  
+  .header:not(.scrolled) .mobile-menu-btn {
+    color: white;
+  }
+  
+  .nav-links.open ~ .mobile-menu-btn {
+     color: var(--text-primary) !important;
   }
 
   .event-card {
@@ -659,6 +739,7 @@ img {
     flex-direction: row;
     padding: 1rem;
     gap: 1rem;
+    min-width: 100%;
   }
 }
 
