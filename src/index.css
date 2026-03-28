@@ -79,7 +79,7 @@ img {
 
 .section {
   padding: 4rem 2rem;
-  background-color: rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.75);
   /* Plus transparent pour l'effet de verre */
   backdrop-filter: blur(var(--blur-val));
   /* Effet blur (flou) puissant */
@@ -313,7 +313,7 @@ img {
 }
 
 .menu-card {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(var(--blur-val));
   -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -385,7 +385,7 @@ img {
 }
 
 .testimonial-card {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(var(--blur-val));
   -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -510,7 +510,7 @@ img {
 }
 
 .comment-card {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(var(--blur-val));
   -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -536,7 +536,7 @@ img {
 }
 
 .comment-form {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(var(--blur-val));
   -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -575,7 +575,7 @@ img {
 
 .event-card {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(var(--blur-val));
   -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -647,7 +647,7 @@ img {
 
 /* Card Links */
 .card-link {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(var(--blur-val));
   -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.5);

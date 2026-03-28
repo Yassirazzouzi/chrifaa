@@ -6,7 +6,7 @@ export default function Home() {
   // Testimonials State
   const [testimonials, setTestimonials] = useState([
     { name: "Ahmed", rating: 5, text: "Un endroit magique ! Le café est délicieux et l'ambiance est incroyablement inspirante avec toutes ces œuvres d'art." },
-    { name: "Sarah", rating: 5, text: "Le meilleur endroit pour se détendre à Chefchaouen. Le thé à la menthe est authentique et le personnel est très accueillant." },
+    { name: "Sarah", rating: 5, text: "Le meilleur endroit pour se détendre à Tanger. Le thé à la menthe est authentique et le personnel est très accueillant." },
     { name: "Karim", rating: 4, text: "Très beau café avec une décoration unique. Les pâtisseries marocaines sont à tomber par terre !" }
   ]);
 
