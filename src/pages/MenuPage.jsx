@@ -11,7 +11,7 @@ export default function MenuPage() {
       <section className="section container">
         <div className="menu-grid">
           <div className="menu-card" style={{backgroundImage: "url('/about.png')", backgroundSize: "cover", backgroundPosition: "center", position: "relative", zIndex: 1}}>
-            <div style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%", backgroundColor: "rgba(255,255,255,0.6)", backdropFilter: "blur(var(--blur-val))", zIndex: -1, borderRadius: "20px"}}></div>
+            <div style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%", backgroundColor: "rgba(255,255,255,0.75)", zIndex: -1, borderRadius: "20px"}}></div>
             <div className="stars">★★★★★</div>
             <div className="menu-list-container" style={{ gap: '1rem' }}>
               <div className="menu-category">

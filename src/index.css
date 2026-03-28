@@ -16,7 +16,7 @@
   --text-secondary: #5c5853;
   --font-heading: 'Copeland', 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
-  --blur-val: 8px;
+  --blur-val: 0;
 }
 
 * {
@@ -31,12 +31,12 @@ body {
   /* Fond blanc qui correspond avec le dessin noir et blanc */
   background-image: url('/bg-art.png');
   background-size: 100% auto;
-  /* L'image s'ajuste à 100% de la largeur sans être coupée */
+  /* L'image s'ajuste Ã  100% de la largeur sans Ãªtre coupÃ©e */
   background-position: top center;
   background-repeat: repeat-y;
-  /* Répète le motif vers le bas si la page est plus longue */
+  /* RÃ©pÃ¨te le motif vers le bas si la page est plus longue */
   background-attachment: fixed;
-  /* Reste fixe au défilement pour un bel effet */
+  /* Reste fixe au dÃ©filement pour un bel effet */
   color: var(--text-primary);
   line-height: 1.6;
 }
@@ -81,9 +81,6 @@ img {
   padding: 4rem 2rem;
   background-color: rgba(255, 255, 255, 0.75);
   /* Plus transparent pour l'effet de verre */
-  backdrop-filter: blur(var(--blur-val));
-  /* Effet blur (flou) puissant */
-  -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.5);
   /* Légère bordure blanche */
   border-radius: 20px;
@@ -147,7 +144,7 @@ img {
 }
 
 .btn::after {
-  content: "›";
+  content: "â€º";
   margin-left: 0.5rem;
   font-size: 1.2rem;
   line-height: 1;
@@ -314,8 +311,6 @@ img {
 
 .menu-card {
   background-color: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(var(--blur-val));
-  -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   padding: 3rem;
@@ -362,7 +357,7 @@ img {
 }
 
 .menu-list li::before {
-  content: "•";
+  content: "â€¢";
   color: var(--primary);
   font-weight: bold;
   display: inline-block;
@@ -386,8 +381,6 @@ img {
 
 .testimonial-card {
   background-color: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(var(--blur-val));
-  -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 2.5rem;
   border-radius: 15px;
@@ -414,7 +407,6 @@ img {
 
 .header.scrolled {
   background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   color: var(--text-primary);
 }
@@ -511,8 +503,6 @@ img {
 
 .comment-card {
   background-color: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(var(--blur-val));
-  -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 1.5rem;
   border-radius: 12px;
@@ -537,8 +527,6 @@ img {
 
 .comment-form {
   background-color: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(var(--blur-val));
-  -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 2rem;
   border-radius: 15px;
@@ -576,8 +564,6 @@ img {
 .event-card {
   display: flex;
   background-color: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(var(--blur-val));
-  -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   overflow: hidden;
@@ -648,8 +634,6 @@ img {
 /* Card Links */
 .card-link {
   background-color: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(var(--blur-val));
-  -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 3rem 2rem;
   border-radius: 20px;
@@ -776,7 +760,7 @@ img {
   .menu-list-container {
     grid-template-columns: 1fr;
   }
-
+  
   .hero-title {
     font-size: 2.5rem;
   }
