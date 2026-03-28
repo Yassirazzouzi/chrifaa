@@ -103,7 +103,8 @@ export default function ReservationPage() {
                     border: hasRes ? '2px solid var(--primary)' : '1px solid #f0f0f0', 
                     borderRadius: '8px', 
                     backgroundColor: hasRes ? 'rgba(212, 163, 89, 0.2)' : 'rgba(255, 255, 255, 0.4)', 
-                    backdropFilter: 'blur(4px)',                    display: 'flex', 
+                    backdropFilter: 'blur(calc(var(--blur-val) / 2))',
+                    display: 'flex', 
                     flexDirection: 'column',
                     transition: 'all 0.2s',
                     cursor: 'pointer'

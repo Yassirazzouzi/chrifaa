@@ -8,7 +8,7 @@
   --text-secondary: #5c5853;
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
-  --blur-val: 12px;
+  --blur-val: 8px;
 }
 
 * {
@@ -297,8 +297,8 @@ img {
 
 .menu-card {
   background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(var(--blur-val));
+  -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 20px;
   padding: 3rem;
@@ -368,8 +368,8 @@ img {
 
 .testimonial-card {
   background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(var(--blur-val));
+  -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 2.5rem;
   border-radius: 15px;
@@ -487,8 +487,8 @@ img {
 
 .comment-card {
   background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(var(--blur-val));
+  -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 1.5rem;
   border-radius: 12px;
@@ -513,8 +513,8 @@ img {
 
 .comment-form {
   background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(var(--blur-val));
+  -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 2rem;
   border-radius: 15px;
@@ -552,8 +552,8 @@ img {
 .event-card {
   display: flex;
   background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(var(--blur-val));
+  -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 15px;
   overflow: hidden;
@@ -623,8 +623,8 @@ img {
 /* Card Links */
 .card-link {
   background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(var(--blur-val));
+  -webkit-backdrop-filter: blur(var(--blur-val));
   border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 3rem 2rem;
   border-radius: 20px;
