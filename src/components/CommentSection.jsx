@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function CommentSection() {
   const [comments, setComments] = useState([
     { name: "Sara B.", text: "Un endroit magnifique ! J'adore l'art sur les murs." },
-    { name: "Youssef T.", text: "Le meilleur café de Chefchaouen." }
+    { name: "Youssef T.", text: "Le meilleur café de Tanger." }
   ]);
   const [newComment, setNewComment] = useState("");
   const [name, setName] = useState("");

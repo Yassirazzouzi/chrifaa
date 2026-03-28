@@ -69,7 +69,7 @@ export default function Home() {
           <div className="about-content">
             <h2>A Propos</h2>
             <p>
-              Situé au cœur de la médina historique de Chefchaouen, Coffee Cultural Cherifa est un café
+              Situé au cœur de la ville vibrante de Tanger, Coffee Cultural Cherifa est un café
               artistique et emblématique. Nous vous invitons à découvrir un espace unique décoré d'œuvres
               d'art murales et à savourer votre café ou thé dans une ambiance chaleureuse et inspirante.
             </p>
@@ -128,7 +128,7 @@ export default function Home() {
               N'hésitez pas à nous contacter pour toute question, réservation de groupe ou événement privé. Notre équipe sera ravie de vous répondre !
             </p>
             <div style={{ marginBottom: "1rem" }}>
-              <strong>📍 Adresse: </strong> 12 Rue Hassan II, Chefchaouen
+              <strong>📍 Adresse: </strong> 12 Rue de la Liberté, Tanger
             </div>
             <div style={{ marginBottom: "1rem" }}>
               <strong>📞 Téléphone: </strong> +212 5 39 98 00 00
@@ -143,7 +143,7 @@ export default function Home() {
             {/* Map Embed */}
             <div style={{ marginTop: "2rem", borderRadius: "15px", overflow: "hidden", height: "250px", boxShadow: "0 5px 15px rgba(0,0,0,0.1)" }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.1633519391054!2d-5.271035023907727!3d35.17192135943485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b26368d30e381%3A0xc3b44bde2cbabcc2!2sChefchaouen%20Medina!5e0!3m2!1sen!2sma!4v1700000000000!5m2!1sen!2sma"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.808!2d-5.811!3d35.789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b42f!2sTangier!5e0!3m2!1sen!2sma!4v1700000000000!5m2!1sen!2sma"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

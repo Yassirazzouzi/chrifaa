@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600&display=swap');
 
+@font-face {
+  font-family: 'Copeland';
+  src: url('/src/assets/fonts/Copeland.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --primary: #d4a359;
   --primary-hover: #b58946;
   --bg-color: #faf8f5;
   --text-primary: #2d2a26;
   --text-secondary: #5c5853;
-  --font-heading: 'Playfair Display', serif;
+  --font-heading: 'Copeland', 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
   --blur-val: 8px;
 }
@@ -207,6 +215,13 @@ img {
   
   .hero-title {
     font-size: 2.2rem;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
   }
 }
 
@@ -222,6 +237,7 @@ img {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .about-image img {
@@ -271,6 +287,7 @@ img {
   overflow: hidden;
   position: relative;
   aspect-ratio: 1;
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .gallery-item img {
@@ -299,7 +316,7 @@ img {
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(var(--blur-val));
   -webkit-backdrop-filter: blur(var(--blur-val));
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   padding: 3rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -311,6 +328,7 @@ img {
   overflow: hidden;
   height: 100%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .menu-card-image img {
@@ -370,7 +388,7 @@ img {
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(var(--blur-val));
   -webkit-backdrop-filter: blur(var(--blur-val));
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 2.5rem;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
@@ -460,6 +478,12 @@ img {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+  .page-header {
+    padding: 6rem 1.5rem 3rem;
+  }
+}
+
 .page-header h1 {
   font-size: 3rem;
   color: white;
@@ -489,7 +513,7 @@ img {
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(var(--blur-val));
   -webkit-backdrop-filter: blur(var(--blur-val));
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -515,7 +539,7 @@ img {
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(var(--blur-val));
   -webkit-backdrop-filter: blur(var(--blur-val));
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
@@ -554,7 +578,7 @@ img {
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(var(--blur-val));
   -webkit-backdrop-filter: blur(var(--blur-val));
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
@@ -607,6 +631,7 @@ img {
   border-radius: 15px;
   overflow: hidden;
   aspect-ratio: 4/3;
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .gallery-item-large img {
@@ -625,7 +650,7 @@ img {
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(var(--blur-val));
   -webkit-backdrop-filter: blur(var(--blur-val));
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 3rem 2rem;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
